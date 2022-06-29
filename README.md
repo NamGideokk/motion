@@ -28,11 +28,17 @@
      - 회원제 (회원가입, 로그인, 회원탈퇴)
      - 소셜 계정 로그인 (구글, 카카오 등)
      - 게시물 수정
+
 　
  
 ## 사용 스킬
 
-- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) 	![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 　
  
+ ## 설계
+ 
+ ![image](https://user-images.githubusercontent.com/96227239/176070544-d40e001f-85c2-42bb-9ec5-fcd359589aa4.png)
+
+> figma - https://www.figma.com/file/q1fbueV230S8ZZhbXo2HYC/Untitled?node-id=0%3A1
