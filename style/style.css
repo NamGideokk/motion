@@ -17,6 +17,7 @@ body {
   background: url("../assets/motionBg.png") center no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow-y: auto;
 
   /* 스크롤바 스타일 */
   /* FireFox */
