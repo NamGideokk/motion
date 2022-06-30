@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ea2c2c;
+
+  --bg-color: #050505;
+
+  --font-color-white: #ececec;
+}
+
+body {
+  background: url("../assets/motionBg.png") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* 공통 스타일 */
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+/* 최상위 클래스 */
+.app {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* header */
+.banner {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+}
+.banner__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+/* header buttons */
+.control-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 2rem;
+}
+.create-button {
+  background-color: var(--primary-color);
+  color: black;
+  padding: 0.5rem 1.8rem;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.create-button:hover {
+  color: var(--font-color-white);
+}
