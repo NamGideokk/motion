@@ -8,6 +8,7 @@
   --primary-color: #ea2c2c;
 
   --bg-color: #050505;
+  --bg-color-trans: #05050588;
 
   --font-color-white: #ececec;
 }
@@ -16,6 +17,20 @@ body {
   background: url("../assets/motionBg.png") center no-repeat;
   background-size: cover;
   height: 100vh;
+
+  /* 스크롤바 스타일 */
+  /* FireFox */
+  scrollbar-width: 10px;
+  scrollbar-color: black;
+  scrollbar-face-color: red;
+}
+/* Safari, Chrome */
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: red;
 }
 
 /* 공통 스타일 */
@@ -34,7 +49,7 @@ button:focus {
 /* 최상위 클래스 */
 .app {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -70,7 +85,25 @@ button:focus {
   margin: 0 1rem;
   transition: 0.3s;
   text-transform: uppercase;
+  /* 드래그 막기 */
+  user-select: none;
 }
 .create-button:hover {
   color: var(--font-color-white);
+}
+
+/* main (document) */
+.document {
+  background-color: var(--bg-color-trans);
+  backdrop-filter: blur(10px);
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--font-color-white);
+  padding: 1.5rem 0;
 }
