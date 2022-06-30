@@ -7,7 +7,7 @@ export class PageComponent {
     this.element.textContent = "PageComponent";
   }
 
-  // parameter(요소를 부착할 부모 요소, 부착 위치)
+  // parameter(자신을 부착할 부모 요소, 부착 위치)
   attachTo(parent: HTMLElement, position: InsertPosition = "afterbegin") {
     parent.insertAdjacentElement(position, this.element);
   }
