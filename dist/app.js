@@ -7,14 +7,14 @@ class App {
     constructor(appRoot) {
         this.page = new PageComponent();
         this.page.attachTo(appRoot);
-        const image = new ImageComponent("Image Title", "https://picsum.photos/600/300");
-        image.attachTo(appRoot, "beforeend");
+        const image = new ImageComponent("Random generater IMAGE", "https://picsum.photos/600/300");
+        this.page.addChild(image);
         const video = new VideoComponent("new video title", "https://youtu.be/uv20S1lduU4");
-        video.attachTo(appRoot, "beforeend");
+        this.page.addChild(video);
         const note = new NoteComponent("note title", "note body");
-        note.attachTo(appRoot, "beforeend");
+        this.page.addChild(note);
         const todo = new TodoComponent("todo title", "todo item");
-        todo.attachTo(appRoot, "beforeend");
+        this.page.addChild(todo);
     }
 }
 new App(document.querySelector(".document"));

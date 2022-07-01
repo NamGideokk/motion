@@ -13,7 +13,7 @@ class App {
     this.page.attachTo(appRoot);
 
     const image = new ImageComponent(
-      "Image Title",
+      "Random generater IMAGE",
       "https://picsum.photos/600/300"
     );
     this.page.addChild(image);
