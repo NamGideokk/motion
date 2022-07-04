@@ -18,7 +18,6 @@ export class PageItemComponent
   implements SectionContainer
 {
   private closeListener?: OnCloseListener;
-  
 
   constructor() {
     super(`<li class="page-item">

@@ -3,7 +3,7 @@ export class MediaSectionInput extends BaseComponent {
     constructor() {
         super(`<div>
             <div class="form__container">
-                <label for="title">Title</label>
+                <label for="title">TITLE</label>
                 <input type="text" id="title" />
             </div>
             <div class="form__container">

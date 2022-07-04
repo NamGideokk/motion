@@ -1,14 +1,9 @@
 # MOTION
 
-
-
 ## 개요
 
-- notion-simple-clone-web
 - Drag & Drop을 이용한 item 순서 변경
 - OOP + Type Sctipt 프로젝트
-
-
 
 ## 프로젝트 계획
 
@@ -28,13 +23,9 @@
     - 소셜 계정 로그인 (구글, 카카오 등)
     - 게시물 수정
 
-
-
 ## 사용 스킬
 
 - ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-
-
 
 ## 설계
 

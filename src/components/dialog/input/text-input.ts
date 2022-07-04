@@ -8,11 +8,11 @@ export class TextSectionInput
   constructor() {
     super(`<div>
             <div class="form__container">
-                <label for="title">Title</label>
+                <label for="title">TITLE</label>
                 <input type="text" id="title" />
             </div>
             <div class="form__container">
-                <label for="body">URL</label>
+                <label for="body">BODY</label>
                 <textarea type="text" row="3" id="body"></textarea>
             </div>
         </div>`);
