@@ -13,4 +13,7 @@ export class BaseComponent {
         }
         parent.removeChild(this.element);
     }
+    attach(coponent, position) {
+        coponent.attachTo(this.element, position);
+    }
 }
