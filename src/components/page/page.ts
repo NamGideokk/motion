@@ -133,12 +133,10 @@ export class PageComponent
 
   onDragOver(event: DragEvent) {
     event.preventDefault(); // Drag and Drop event 호출할때 필수
-    console.log("dragOver", event);
   }
 
   onDrop(event: DragEvent) {
     event.preventDefault();
-    console.log("drop", event);
     if (!this.dropTarget) {
       return;
     }

@@ -82,11 +82,9 @@ export class PageComponent extends BaseComponent {
     }
     onDragOver(event) {
         event.preventDefault();
-        console.log("dragOver", event);
     }
     onDrop(event) {
         event.preventDefault();
-        console.log("drop", event);
         if (!this.dropTarget) {
             return;
         }
