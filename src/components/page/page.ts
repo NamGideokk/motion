@@ -20,7 +20,7 @@ export class PageItemComponent
   private closeListener?: OnCloseListener;
 
   constructor() {
-    super(`<li class="page-item">
+    super(`<li draggable="true" class="page-item">
             <section class="page-item__body"></section>
             <div class="page-item__controls">
               <button class="close">&times;</button>
@@ -30,7 +30,23 @@ export class PageItemComponent
     closeBtn.onclick = () => {
       this.closeListener && this.closeListener();
     };
+
+    this.element.addEventListener("dragstart", (event: DragEvent) => {
+      this.onDragStart(event);
+    });
+    this.element.addEventListener("dragend", (event: DragEvent) => {
+      this.onDragEnd(event);
+    });
   }
+
+  onDragStart(event: DragEvent) {
+    console.log("dragStart", event);
+  }
+
+  onDragEnd(event: DragEvent) {
+    console.log("dragEnd", event);
+  }
+
   addChild(child: Component) {
     const container = this.element.querySelector(
       ".page-item__body"
@@ -47,6 +63,23 @@ export class PageComponent
 {
   constructor(private pageItemConstructor: SectionContainerConstructor) {
     super('<ul class="page"></ul>');
+
+    this.element.addEventListener("dragover", (event: DragEvent) => {
+      this.onDragOver(event);
+    });
+    this.element.addEventListener("drop", (event: DragEvent) => {
+      this.onDrop(event);
+    });
+  }
+
+  onDragOver(event: DragEvent) {
+    event.preventDefault(); // Drag and Drop event 호출할때 필수
+    console.log("dragOver", event);
+  }
+
+  onDrop(event: DragEvent) {
+    event.preventDefault();
+    console.log("drop", event);
   }
 
   addChild(section: Component) {

@@ -197,16 +197,16 @@ textarea {
 }
 .page-item:hover {
   border-color: var(--bg-color-dialog);
+  cursor: grab;
 }
-
+.page-item:active {
+  cursor: grabbing;
+}
 .page-item__body {
-  color: var(--font-color-gold);
-  /* background-color: burlywood; */
+  color: var(--font-color-white);
   width: 100%;
 }
-/* .page-item__controls {
-  background-color: chocolate;
-} */
+
 .page-item__controls > .close {
   height: 100%;
   padding-left: 10px;
@@ -217,6 +217,8 @@ textarea {
 }
 .page-item__title {
   padding: 10px;
+  font-size: 2rem;
+  color: var(--font-color-gold);
 }
 
 /* image section */
@@ -244,10 +246,14 @@ textarea {
 /* note section */
 .note__body {
   padding: 10px;
+  color: var(--font-color-white);
 }
 
 /* todo section */
+.todo {
+  margin-bottom: 10px;
+}
 .todo-checkbox {
-  margin-left: 10px;
+  margin: 0 10px;
   accent-color: var(--font-color-gold);
 }
