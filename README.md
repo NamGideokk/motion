@@ -1,6 +1,6 @@
 # MOTION
 
-## 개요
+## 프로젝트 소개
 
 - OOP + Type Sctipt 프로젝트
 - Drag & Drop을 이용한 item 순서 변경
@@ -36,6 +36,7 @@
 
 ## 설계
 
-![image](https://user-images.githubusercontent.com/96227239/176070544-d40e001f-85c2-42bb-9ec5-fcd359589aa4.png)
+- 디자인
+  ![image](https://user-images.githubusercontent.com/96227239/176070544-d40e001f-85c2-42bb-9ec5-fcd359589aa4.png)
 
 > figma - https://www.figma.com/file/q1fbueV230S8ZZhbXo2HYC/Untitled?node-id=0%3A1
