@@ -24,6 +24,7 @@ body {
   background: url("../assets/motionBg.png") center no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow-y: hidden;
 }
 /* 스크롤바 스타일 */
 /* FireFox */
@@ -74,6 +75,7 @@ button {
   font-size: 4rem;
   text-transform: uppercase;
   margin: 1rem 0;
+  letter-spacing: 0.3rem;
 }
 
 /* header buttons */
@@ -135,7 +137,8 @@ button {
   display: flex;
   flex-direction: column;
   padding-bottom: 1em;
-  width: 32em;
+  max-width: 32em;
+  width: 86vw;
   background-color: var(--bg-color-dialog);
   box-shadow: 0 2px 10px var(--bg-color);
 }
@@ -188,7 +191,6 @@ textarea {
 }
 
 /* page-item */
-
 .page-item {
   border: 1px solid var(--bg-color-item);
   background-color: var(--bg-color-item);
@@ -280,4 +282,74 @@ textarea {
 .drop-area {
   border-color: var(--primary-color);
   transition: 0.3s;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 630px) {
+  .banner__title {
+    font-size: 1.7rem;
+    margin: 0.5rem 0;
+  }
+  .control-panel {
+    padding: 0.5rem 0 1rem;
+  }
+  .control-panel > li > .create-button {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0 8px;
+  }
+  .page-item__title {
+    font-size: 1.2rem;
+  }
+
+  /* page-item */
+  .page-item {
+    flex-direction: column;
+  }
+
+  /* image section */
+  .image {
+    flex-direction: column;
+  }
+  .image__holder {
+    background-color: var(--bg-color);
+    width: 100%;
+  }
+  .image__thumbnail {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* video section */
+  .video__iframe {
+    height: calc(1300px / 5.7);
+  }
+
+  .page-item__controls > .close {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+  .page-item__controls > .close:hover {
+    background: linear-gradient(180deg, transparent, var(--bg-color));
+  }
+
+  /* dialog */
+  .dialog__container {
+    padding-bottom: 13px;
+  }
+  .form__container > label {
+    font-size: 1.2rem;
+  }
+  .form__container > input,
+  textarea {
+    font-size: 1.2rem;
+  }
+  .dialog__submit {
+    font-size: 1rem;
+    padding: 0.5rem 1.3rem;
+    margin-top: 10px;
+  }
 }
