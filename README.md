@@ -1,5 +1,7 @@
 # MOTION
 
+- https://motion-beta.vercel.app/
+
 ## 프로젝트 소개
 
 - OOP + Type Sctipt 프로젝트
@@ -12,6 +14,7 @@
   - 기본 디자인 설계 & 마크업 & 스타일링
   - class를 이용한 객체 지향 프로그래밍 (OOP)
   - HTML Drag and Drop API 사용
+  - Vercel 테스트 배포
 
 - 기능
 
@@ -46,3 +49,7 @@
 - https://sortablejs.github.io/Sortable/
 - https://github.com/atlassian/react-beautiful-dnd
 - https://github.com/haltu/muuri
+
+## 배포
+
+- Vercel
