@@ -143,6 +143,20 @@ button {
   box-shadow: 0 2px 10px var(--bg-color);
 }
 
+.dialog__header {
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.dialog__header > h2 {
+  margin-left: 15px;
+  color: var(--primary-color);
+}
+
 .form__container > label {
   color: var(--font-color-gold);
   font-size: 1.5rem;
@@ -178,13 +192,11 @@ textarea {
 
 .close {
   color: var(--primary-color);
-  width: 100%;
   font-size: 2rem;
-  background-color: #212121;
+  background-color: transparent;
   transition: 0.3s;
   text-align: right;
   padding-right: 10px;
-  margin-bottom: 10px;
 }
 .close:hover {
   color: var(--primary-color-dark);

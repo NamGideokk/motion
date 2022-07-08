@@ -55,22 +55,22 @@ class App {
     );
 
     // For demo
-    this.page.addChild(
-      new ImageComponent("Image Title", "https://picsum.photos/700/300")
-    );
-    this.page.addChild(
-      new VideoComponent("Video Title", "https://youtu.be/tgSQVk5AnAs")
-    );
-    this.page.addChild(
-      new ImageComponent("Image Title", "https://picsum.photos/300/200")
-    );
-    this.page.addChild(new NoteComponent("Note Title", "Hello! Motion."));
-    this.page.addChild(
-      new ImageComponent("Image Title", "https://picsum.photos/200/200")
-    );
-    this.page.addChild(
-      new TodoComponent("Todo Title", "study TypeScript + OOP")
-    );
+    // this.page.addChild(
+    //   new ImageComponent("Image Title", "https://picsum.photos/700/300")
+    // );
+    // this.page.addChild(
+    //   new VideoComponent("Video Title", "https://youtu.be/tgSQVk5AnAs")
+    // );
+    // this.page.addChild(
+    //   new ImageComponent("Image Title", "https://picsum.photos/300/200")
+    // );
+    // this.page.addChild(new NoteComponent("Note Title", "Hello! Motion."));
+    // this.page.addChild(
+    //   new ImageComponent("Image Title", "https://picsum.photos/200/200")
+    // );
+    // this.page.addChild(
+    //   new TodoComponent("Todo Title", "study TypeScript + OOP")
+    // );
   }
 
   private bindElementToDialog<T extends (MediaData | TextData) & Component>(

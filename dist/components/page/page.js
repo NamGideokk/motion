@@ -101,8 +101,11 @@ export class PageComponent extends BaseComponent {
         item.addChild(section);
         item.attachTo(this.element, "beforeend");
         item.setOnCloseListener(() => {
-            item.removeFrom(this.element);
-            this.children.delete(item);
+            const deleteConfirm = confirm("게시물을 삭제하시겠습니까?");
+            if (deleteConfirm) {
+                item.removeFrom(this.element);
+                this.children.delete(item);
+            }
         });
         this.children.add(item);
         item.setOnDragStateListener((target, state) => {
